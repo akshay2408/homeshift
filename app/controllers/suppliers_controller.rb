@@ -1,5 +1,4 @@
 class SuppliersController < ApplicationController
-  include ApplicationHelper
 
   def search
     @result = nil
