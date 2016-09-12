@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :suppliers, only: [] do
     collection do
+      get :search
       post :search
     end
   end
