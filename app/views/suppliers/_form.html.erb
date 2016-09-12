@@ -1,0 +1,16 @@
+<%= form_tag(search_suppliers_path) do %>
+  <div class="form-group">
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon">Postcode</span>
+      <%= text_field_tag :postcode, params["postcode"] , :class => "form-control", :placeholder => "Enter your postcode..." %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= submit_tag "Search Supplier" , class: "btn btn-lg btn-primary btn-block" %>
+  </div>
+<% end %>
+
+<div class="row" align="center">
+  <h3><%= @result %></h3>
+</div>
